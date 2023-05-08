@@ -20,6 +20,10 @@ ul {
     padding: 0px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* header */
 .header-container {
     padding: 10px 0 10px 0;
@@ -139,4 +143,28 @@ ul {
 }
 .header-link-ul li a:hover {
     color: white;
+}
+
+/* nav */
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px
+}
+.nav-ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+.nav-ul li a {
+    color: var(--prtimes-color);
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav-ul li a:hover {
+    font-weight: bold;
 }
