@@ -21,18 +21,14 @@ ul {
 }
 
 /* header */
-header {
+.header-container {
     padding: 10px 0 10px 0;
     background-color: var(--prtimes-color);
     margin: 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.header-container {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -79,7 +75,6 @@ header {
     border-right: 1px solid var(--prtimes-color-str);
 }
 .header-nav-ul li a:hover {
-    color: white;
     text-decoration: underline;
 }
 
@@ -135,7 +130,7 @@ header {
 .header-link-ul li .line{
     border-right: 1px solid var(--prtimes-color-str);
 }
-.header-link-ul li .main{
+.header-link-ul li .bold{
     color: white;
     font-weight: bold;
 }
