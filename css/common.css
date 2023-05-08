@@ -1,1 +1,30 @@
-@charset "utf-8";
+a {
+    color: black;
+    text-decoration: none
+}
+
+/* header */
+#header {
+    background-color: #294c7a;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-description {
+    color: #BFC9D7;
+    font-size: 12px;
+    margin-left: 12px;
+    font-weight: normal;
+}
