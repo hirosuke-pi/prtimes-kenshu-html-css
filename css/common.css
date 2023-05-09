@@ -363,6 +363,6 @@ ul {
 /* keyword*/
 .keyword {
     width: 300px;
-    background-color: green;
+    background-color: var(--prtimes-color);
     margin: 20px;
 }
