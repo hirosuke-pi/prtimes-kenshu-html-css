@@ -55,12 +55,12 @@ ul {
 .header-description {
     color: var(--prtimes-color-str);
     font-size: 12px;
-    margin-inline-start: 12px;
+    margin-left: 12px;
     font-weight: normal;
 }
 
 .header-nav {
-    margin-inline-start: 40px;
+    margin-left: 40px;
 }
 .header-nav-ul {
     display: flex;
@@ -86,7 +86,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline-start: 10px;
+    margin-left: 10px;
 }
 .header-search form {
     display: flex;
@@ -114,7 +114,7 @@ ul {
 }
 
 .header-link {
-    margin-block-start: 10px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
     justify-content: flex-start;
