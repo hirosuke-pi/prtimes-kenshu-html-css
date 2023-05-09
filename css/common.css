@@ -5,7 +5,8 @@
     --prtimes-color-str-gray: #a2a2a2;
     --prtimes-color-str-black: #3b3b3b;
     --prtimes-font-size: 13px;
-    --prtimes-font-size-small: 11px;
+    --prtimes-font-size-small-12: 12px;
+    --prtimes-font-size-small-11: 11px;
     --prtimes-ranking-card-width: 181px;
     --prtimes-ranking-card-height: 244px;
 }
@@ -72,7 +73,7 @@ ul {
 
 .header-description {
     color: var(--prtimes-color-str-white);
-    font-size: var(--prtimes-font-size-small);
+    font-size: var(--prtimes-font-size-small-12);
     margin-left: 12px;
     font-weight: normal;
 }
@@ -205,6 +206,19 @@ ul {
     margin: 20px 5px 20px 5px;
 }
 
+.ranking-container {
+    position: absolute; 
+    height: var(--prtimes-ranking-card-height);
+}
+
+.ranking-container .ranking-item-title {
+    transition: color 0.3s;
+}
+.ranking-container:hover .ranking-item-title {
+    color: #3d83e0;
+    text-decoration: underline;
+}
+
 .ranking-item-rank {
     position: absolute;
     top: 0;
@@ -251,13 +265,17 @@ ul {
 }
 .ranking-item-time {
     color: var(--prtimes-color-str-gray);
-    font-size: var(--prtimes-font-size-small);
+    font-size: var(--prtimes-font-size-small-11);
+}
+.ranking-item-company:hover {
+    color: var(--prtimes-color-str-black)
 }
 .ranking-item-company {
     color: var(--prtimes-color-str-gray);
-    font-size: var(--prtimes-font-size-small);
+    font-size: var(--prtimes-font-size-small-11);
 
-    white-space: pre;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
