@@ -26,7 +26,7 @@ ul {
 
 /* header */
 .header-container {
-    padding: 10px 0 10px 0;
+    padding-block: 10px;
     background-color: var(--prtimes-color);
     margin: 0px;
     width: 100%;
@@ -55,12 +55,12 @@ ul {
 .header-description {
     color: var(--prtimes-color-str);
     font-size: 12px;
-    margin-left: 12px;
+    margin-inline-start: 12px;
     font-weight: normal;
 }
 
 .header-nav {
-    margin: 0 0 0 40px;
+    margin-inline-start: 40px;
 }
 .header-nav-ul {
     display: flex;
@@ -73,7 +73,7 @@ ul {
     color: white;
     font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding-inline: 10px;
 }
 .header-nav-ul li .line{
     border-right: 1px solid var(--prtimes-color-str);
@@ -86,14 +86,14 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-inline-start: 10px;
 }
 .header-search form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header-search input[type="text"]{
+.header-search input[type="text"] {
     border: none;
     height: 30px;
     border-radius: 5px 0 0 5px;
@@ -114,7 +114,7 @@ ul {
 }
 
 .header-link {
-    margin-top: 10px;
+    margin-block-start: 10px;
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -129,17 +129,17 @@ ul {
     color: var(--prtimes-color-str);
     font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding-inline: 10px;
 }
-.header-link-ul li .line{
+.header-link-ul li .line {
     border-right: 1px solid var(--prtimes-color-str);
 }
-.header-link-ul li .bold{
+.header-link-ul li .bold {
     color: white;
     font-weight: bold;
 }
 .header-link-ul li .no-space {
-    padding: 0px 10px 0px 0px;
+    padding-inline: 0px 10px;
 }
 .header-link-ul li a:hover {
     color: white;
@@ -156,13 +156,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 0 5px 0;
+    margin-block: 5px;
 }
 .nav-ul li a {
     color: var(--prtimes-color);
     font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding-inline: 10px;
 }
 
 .nav-ul li a:hover {
