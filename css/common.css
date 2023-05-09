@@ -209,7 +209,6 @@ ul {
     height: var(--prtimes-ranking-card-height);
     margin: 20px 5px 20px 5px;
 }
-
 .ranking-container {
     position: absolute; 
     height: var(--prtimes-ranking-card-height);
@@ -237,16 +236,13 @@ ul {
     width: 24px;
     height: 24px;
 }
-
 .ranking-item-img {
     object-fit: contain;
 }
-
-.ranking-item-content {
+.ranking-item-content-body {
     position: relative;
     margin: 10px;
 }
-
 .ranking-item-title {
     font-size: var(--prtimes-font-size);
     color: var(--prtimes-color-str-black);
@@ -322,7 +318,6 @@ ul {
 .release-item-img {
     object-fit: contain;
 }
-
 .release-container .release-item-title {
     transition: color 0.3s;
 }
@@ -343,6 +338,12 @@ ul {
     -webkit-box-orient: vertical;
 }
 
+.release-item-info {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: calc(var(--prtimes-release-card-width) - 100px);
+}
 .release-item-time {
     color: var(--prtimes-color-str-gray);
     font-size: var(--prtimes-font-size-small-11);
@@ -357,13 +358,6 @@ ul {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-.release-item-info {
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: calc(var(--prtimes-release-card-width) - 100px);
 }
 
 /* keyword*/
