@@ -1,7 +1,15 @@
 @charset "UTF-8";
 :root {
     --prtimes-color: #294c7a;
-    --prtimes-color-str: #BFC9D7;
+    --prtimes-color-hover: #3d83e0;
+    --prtimes-color-str-white: #BFC9D7;
+    --prtimes-color-str-gray: #a2a2a2;
+    --prtimes-color-str-black: #3b3b3b;
+    --prtimes-font-size: 13px;
+    --prtimes-font-size-small-12: 12px;
+    --prtimes-font-size-small-11: 11px;
+    --prtimes-ranking-card-width: 181px;
+    --prtimes-ranking-card-height: 244px;
 }
 
 a {
@@ -22,6 +30,18 @@ ul {
 
 .bold {
     font-weight: bold;
+}
+
+.str-white {
+    color: var(--prtimes-color-str-white);
+}
+
+.str-gray {
+    color: var(--prtimes-color-str-gray);
+}
+
+.str-black {
+    color: var(--prtimes-color-str-black);
 }
 
 /* header */
@@ -53,8 +73,8 @@ ul {
 }
 
 .header-description {
-    color: var(--prtimes-color-str);
-    font-size: 12px;
+    color: var(--prtimes-color-str-white);
+    font-size: var(--prtimes-font-size-small-12);
     margin-left: 12px;
     font-weight: normal;
 }
@@ -71,12 +91,12 @@ ul {
 }
 .header-nav-ul li a {
     color: white;
-    font-size: 13px;
+    font-size: var(--prtimes-font-size);
     text-decoration: none;
     padding-inline: 10px;
 }
 .header-nav-ul li .line{
-    border-right: 1px solid var(--prtimes-color-str);
+    border-right: 1px solid var(--prtimes-color-str-white);
 }
 .header-nav-ul li a:hover {
     text-decoration: underline;
@@ -98,7 +118,7 @@ ul {
     height: 30px;
     border-radius: 5px 0 0 5px;
     padding-left: 15px;
-    font-size: 13px;
+    font-size: var(--prtimes-font-size);
     width: 260px;
 }
 .header-search input[type="text"]:focus {
@@ -126,13 +146,13 @@ ul {
     align-items: center;
 }
 .header-link-ul li a {
-    color: var(--prtimes-color-str);
-    font-size: 13px;
+    color: var(--prtimes-color-str-white);
+    font-size: var(--prtimes-font-size);
     text-decoration: none;
     padding-inline: 10px;
 }
 .header-link-ul li .line {
-    border-right: 1px solid var(--prtimes-color-str);
+    border-right: 1px solid var(--prtimes-color-str-white);
 }
 .header-link-ul li .bold {
     color: white;
@@ -150,7 +170,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px
+    margin: 5px
 }
 .nav-ul li {
     display: flex;
@@ -160,7 +180,7 @@ ul {
 }
 .nav-ul li a {
     color: var(--prtimes-color);
-    font-size: 13px;
+    font-size: var(--prtimes-font-size);
     text-decoration: none;
     padding-inline: 10px;
 }
@@ -168,3 +188,96 @@ ul {
 .nav-ul li a:hover {
     font-weight: bold;
 }
+
+/* ranking */
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ebebeb;
+    border-top: 1px solid #dfdfdf;
+    flex-wrap: wrap;
+}
+
+.ranking-item {
+    position:  relative; 
+    background-color: white;
+    width: var(--prtimes-ranking-card-width);
+    height: var(--prtimes-ranking-card-height);
+    margin: 20px 5px 20px 5px;
+}
+
+.ranking-container {
+    position: absolute; 
+    height: var(--prtimes-ranking-card-height);
+}
+
+.ranking-container .ranking-item-title {
+    transition: color 0.3s;
+}
+.ranking-container:hover .ranking-item-title {
+    color: var(--prtimes-color-hover);
+    text-decoration: underline;
+}
+
+.ranking-item-rank {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: var(--prtimes-color);
+    padding: 0 8px 0 5px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+
+.ranking-item-img {
+    object-fit: contain;
+}
+
+.ranking-item-content {
+    position: relative;
+    margin: 10px;
+}
+
+.ranking-item-title {
+    font-size: var(--prtimes-font-size);
+    color: var(--prtimes-color-str-black);
+    font-weight: normal;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.ranking-item-info {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+
+    width: calc(var(--prtimes-ranking-card-width) - 20px);
+}
+.ranking-item-time {
+    color: var(--prtimes-color-str-gray);
+    font-size: var(--prtimes-font-size-small-11);
+}
+.ranking-item-company:hover {
+    color: var(--prtimes-color-str-black)
+}
+.ranking-item-company {
+    color: var(--prtimes-color-str-gray);
+    font-size: var(--prtimes-font-size-small-11);
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
