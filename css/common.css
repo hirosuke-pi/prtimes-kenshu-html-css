@@ -214,11 +214,14 @@ ul {
     padding: 0 8px 0 5px;
     font-weight: bold;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
 }
 
-.ranking-item-link {
-    height: 100%;
+.ranking-item-img {
+    object-fit: contain;
 }
 
 .ranking-item-content {
