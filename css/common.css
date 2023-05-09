@@ -20,9 +20,13 @@ ul {
     padding: 0px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* header */
 .header-container {
-    padding: 10px 0 10px 0;
+    padding-block: 10px;
     background-color: var(--prtimes-color);
     margin: 0px;
     width: 100%;
@@ -56,7 +60,7 @@ ul {
 }
 
 .header-nav {
-    margin: 0 0 0 40px;
+    margin-left: 40px;
 }
 .header-nav-ul {
     display: flex;
@@ -69,7 +73,7 @@ ul {
     color: white;
     font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding-inline: 10px;
 }
 .header-nav-ul li .line{
     border-right: 1px solid var(--prtimes-color-str);
@@ -89,7 +93,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
-.header-search input[type="text"]{
+.header-search input[type="text"] {
     border: none;
     height: 30px;
     border-radius: 5px 0 0 5px;
@@ -125,18 +129,42 @@ ul {
     color: var(--prtimes-color-str);
     font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding-inline: 10px;
 }
-.header-link-ul li .line{
+.header-link-ul li .line {
     border-right: 1px solid var(--prtimes-color-str);
 }
-.header-link-ul li .bold{
+.header-link-ul li .bold {
     color: white;
     font-weight: bold;
 }
 .header-link-ul li .no-space {
-    padding: 0px 10px 0px 0px;
+    padding-inline: 0px 10px;
 }
 .header-link-ul li a:hover {
     color: white;
+}
+
+/* nav */
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px
+}
+.nav-ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5px;
+}
+.nav-ul li a {
+    color: var(--prtimes-color);
+    font-size: 13px;
+    text-decoration: none;
+    padding-inline: 10px;
+}
+
+.nav-ul li a:hover {
+    font-weight: bold;
 }
