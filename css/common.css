@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
     --prtimes-color: #294c7a;
+    --prtimes-color-hover: #3d83e0;
     --prtimes-color-str-white: #BFC9D7;
     --prtimes-color-str-gray: #a2a2a2;
     --prtimes-color-str-black: #3b3b3b;
@@ -196,6 +197,7 @@ ul {
     width: 100%;
     background-color: #ebebeb;
     border-top: 1px solid #dfdfdf;
+    flex-wrap: wrap;
 }
 
 .ranking-item {
@@ -215,7 +217,7 @@ ul {
     transition: color 0.3s;
 }
 .ranking-container:hover .ranking-item-title {
-    color: #3d83e0;
+    color: var(--prtimes-color-hover);
     text-decoration: underline;
 }
 
