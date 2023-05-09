@@ -287,7 +287,6 @@ ul {
 .main-body {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* new release */
@@ -295,6 +294,12 @@ ul {
     width: 780px;
     margin: 30px 0 30px 0;
 }
+.release-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .release-title {
     margin-bottom: 20px;
     color: var(--prtimes-color-str-black);
