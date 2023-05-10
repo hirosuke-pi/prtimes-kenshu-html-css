@@ -3,6 +3,8 @@
     --prtimes-color: #294c7a;
     --prtimes-color-light: #3081c9;
     --prtimes-color-light-hover: #59a7e6;
+    --prtimes-color-background: #f1f1f1;
+    --prtimes-color-border: #dfdfdf;
     --prtimes-color-str-white: #BFC9D7;
     --prtimes-color-str-gray: #a2a2a2;
     --prtimes-color-str-black: #3b3b3b;
@@ -205,7 +207,7 @@ ul {
     align-items: center;
     width: 100%;
     background-color: #ebebeb;
-    border-top: 1px solid #dfdfdf;
+    border-top: 1px solid var(----prtimes-color-border);
     flex-wrap: wrap;
 }
 
@@ -317,7 +319,7 @@ ul {
     position: relative;
     width: var(--prtimes-release-card-width);
     height: var(--prtimes-release-card-height);
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--prtimes-color-border);
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
@@ -390,4 +392,40 @@ ul {
 .keyword {
     width: 300px;
     margin: 30px 15px 15px 15px;
+}
+.keyword-title {
+    margin-bottom: 20px;
+    color: var(--prtimes-color-str-black);
+}
+
+.keyword-budge-ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--prtimes-color-border);
+}
+
+.keyword-budge-item {
+    font-size: var(--prtimes-font-size);
+    padding: 2px 15px 2px 15px;
+    margin: 5px;
+    background-color: var(--prtimes-color-background);
+    color: var(--prtimes-color-str-black);
+    border-radius: 90px;
+}
+.keyword-budge-item:hover {
+    font-weight: bold;
+}
+
+.keyword-budge-item-more {
+    font-size: var(--prtimes-font-size);
+    padding: 2px 15px 2px 15px;
+    margin: 5px;
+    color: var(--prtimes-color-str-black);
+    border-radius: 90px;
+    border: 1px solid var(--prtimes-color-background);
+}
+.keyword-budge-item-more:hover a {
+    color: var(--prtimes-color-light);
 }
