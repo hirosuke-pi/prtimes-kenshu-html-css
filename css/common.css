@@ -1,15 +1,14 @@
 @charset "UTF-8";
 :root {
     --prtimes-color: #294c7a;
-    --prtimes-color-hover: #3d83e0;
+    --prtimes-color-light: #3081c9;
+    --prtimes-color-light-hover: #59a7e6;
     --prtimes-color-str-white: #BFC9D7;
     --prtimes-color-str-gray: #a2a2a2;
     --prtimes-color-str-black: #3b3b3b;
     --prtimes-font-size: 13px;
     --prtimes-font-size-small-12: 12px;
     --prtimes-font-size-small-11: 11px;
-    --prtimes-ranking-card-width: 181px;
-    --prtimes-ranking-card-height: 244px;
 }
 
 a {
@@ -189,8 +188,18 @@ ul {
     font-weight: bold;
 }
 
+/* main */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* ranking */
 .ranking {
+    --prtimes-ranking-card-width: 181px;
+    --prtimes-ranking-card-height: 244px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +216,6 @@ ul {
     height: var(--prtimes-ranking-card-height);
     margin: 20px 5px 20px 5px;
 }
-
 .ranking-container {
     position: absolute; 
     height: var(--prtimes-ranking-card-height);
@@ -217,7 +225,7 @@ ul {
     transition: color 0.3s;
 }
 .ranking-container:hover .ranking-item-title {
-    color: var(--prtimes-color-hover);
+    color: var(--prtimes-color-light);
     text-decoration: underline;
 }
 
@@ -235,16 +243,13 @@ ul {
     width: 24px;
     height: 24px;
 }
-
 .ranking-item-img {
     object-fit: contain;
 }
-
-.ranking-item-content {
+.ranking-item-content-body {
     position: relative;
     margin: 10px;
 }
-
 .ranking-item-title {
     font-size: var(--prtimes-font-size);
     color: var(--prtimes-color-str-black);
@@ -281,3 +286,109 @@ ul {
     overflow: hidden;
 }
 
+/* main */
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+}
+
+/* new release */
+.release {
+    --prtimes-release-card-width: 380px;
+    --prtimes-release-card-height: 110px;
+    margin-bottom: 20px;
+    width: 780px;
+}
+.release-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.release-title {
+    margin-bottom: 20px;
+    color: var(--prtimes-color-str-black);
+}
+
+.release-item {
+    position: relative;
+    width: var(--prtimes-release-card-width);
+    height: var(--prtimes-release-card-height);
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.release-container {
+    display: flex;
+    justify-content: center;
+}
+
+.release-item-img {
+    object-fit: contain;
+}
+.release-container .release-item-title {
+    transition: color 0.3s;
+}
+.release-container:hover .release-item-title {
+    color: var(--prtimes-color-light);
+    text-decoration: underline;
+}
+
+.release-item-title {
+    font-size: var(--prtimes-font-size);
+    color: var(--prtimes-color-str-black);
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.release-item-info {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: calc(var(--prtimes-release-card-width) - 100px);
+}
+.release-item-time {
+    color: var(--prtimes-color-str-gray);
+    font-size: var(--prtimes-font-size-small-11);
+}
+.release-item-company:hover {
+    color: var(--prtimes-color-str-black)
+}
+.release-item-company {
+    color: var(--prtimes-color-str-gray);
+    font-size: var(--prtimes-font-size-small-11);
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.release-button-more {
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--prtimes-color-light);
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+.release-button-more:hover {
+    background-color: var(--prtimes-color-light-hover);
+}
+
+/* keyword */
+.keyword {
+    width: 300px;
+    background-color: var(--prtimes-color);
+    margin: 30px 0 30px 30px;
+}
