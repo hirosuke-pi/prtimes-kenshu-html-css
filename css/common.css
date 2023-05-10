@@ -420,8 +420,12 @@ ul {
     background-color: var(--prtimes-color-background);
     border-radius: 11px;
 }
-.keyword-budge-item:hover a {
-    color: var(--prtimes-color-light);
+
+.keyword-budge-item a {
+    color: var(--prtimes-color-str-black);
+}
+.keyword-budge-item a:hover {
+    color: black;
 }
 
 .keyword-budge-item-more {
@@ -432,6 +436,6 @@ ul {
     border-radius: 90px;
     border: 1px solid var(--prtimes-color-background);
 }
-.keyword-budge-item-more:hover a {
+.keyword-budge-item-more a:hover {
     color: var(--prtimes-color-light);
 }
