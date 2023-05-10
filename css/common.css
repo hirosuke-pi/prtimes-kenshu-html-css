@@ -13,6 +13,10 @@
     --prtimes-font-size-small-11: 11px;
 }
 
+* {
+    font-family: system-ui, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
 a {
     color: black;
     text-decoration: none
@@ -343,6 +347,7 @@ ul {
 .release-item-title {
     font-size: var(--prtimes-font-size);
     color: var(--prtimes-color-str-black);
+    font-weight: normal;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -360,14 +365,14 @@ ul {
 }
 .release-item-time {
     color: var(--prtimes-color-str-gray);
-    font-size: var(--prtimes-font-size-small-11);
+    font-size: var(--prtimes-font-size-small-12);
 }
 .release-item-company:hover {
     color: var(--prtimes-color-str-black)
 }
 .release-item-company {
     color: var(--prtimes-color-str-gray);
-    font-size: var(--prtimes-font-size-small-11);
+    font-size: var(--prtimes-font-size-small-12);
 
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -404,24 +409,25 @@ ul {
     flex-wrap: wrap;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--prtimes-color-border);
+    row-gap: 10px;
+    column-gap: 9px;
 }
 
 .keyword-budge-item {
     font-size: var(--prtimes-font-size);
-    padding: 2px 15px 2px 15px;
-    margin: 5px;
+    line-height: 22px;
+    padding: 0 8px;
     background-color: var(--prtimes-color-background);
-    color: var(--prtimes-color-str-black);
-    border-radius: 90px;
+    border-radius: 11px;
 }
-.keyword-budge-item:hover {
-    font-weight: bold;
+.keyword-budge-item:hover a {
+    color: var(--prtimes-color-light);
 }
 
 .keyword-budge-item-more {
     font-size: var(--prtimes-font-size);
-    padding: 2px 15px 2px 15px;
-    margin: 5px;
+    line-height: 22px;
+    padding: 0 8px;
     color: var(--prtimes-color-str-black);
     border-radius: 90px;
     border: 1px solid var(--prtimes-color-background);
