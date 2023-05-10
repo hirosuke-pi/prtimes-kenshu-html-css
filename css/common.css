@@ -292,7 +292,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px 0 30px 0;
+    margin: 30px 15px 15px;
 }
 
 /* new release */
@@ -389,6 +389,5 @@ ul {
 /* keyword */
 .keyword {
     width: 300px;
-    background-color: var(--prtimes-color);
-    margin: 30px 0 30px 30px;
+    margin: 30px 15px 15px 15px;
 }
