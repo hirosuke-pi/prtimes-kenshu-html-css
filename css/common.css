@@ -8,10 +8,6 @@
     --prtimes-font-size: 13px;
     --prtimes-font-size-small-12: 12px;
     --prtimes-font-size-small-11: 11px;
-    --prtimes-ranking-card-width: 181px;
-    --prtimes-ranking-card-height: 244px;
-    --prtimes-release-card-width: 380px;
-    --prtimes-release-card-height: 110px;
 }
 
 a {
@@ -191,8 +187,18 @@ ul {
     font-weight: bold;
 }
 
+/* main */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* ranking */
 .ranking {
+    --prtimes-ranking-card-width: 181px;
+    --prtimes-ranking-card-height: 244px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,6 +293,8 @@ ul {
 
 /* new release */
 .release {
+    --prtimes-release-card-width: 380px;
+    --prtimes-release-card-height: 110px;
     width: 780px;
     margin: 30px 0 30px 0;
 }
